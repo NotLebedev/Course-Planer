@@ -1,0 +1,621 @@
+[
+	{
+		"type": "skill",
+		"id": "cpp-func",
+		"name": "FUNC",
+		"description": "Functions"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-aptr",
+		"name": "APTR",
+		"description": "Arbitary pointers"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-fptr",
+		"name": "FPTR",
+		"description": "Function pointers"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-stru",
+		"name": "STRU",
+		"description": "Structures"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-sort",
+		"name": "SORT",
+		"description": "Sorting algortihms"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-dyn",
+		"name": "DYN",
+		"description": "Dynamic mem"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-pre",
+		"name": "PRE",
+		"description": "Preprocessor knowledge"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-stk",
+		"name": "STK",
+		"description": "Stack"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-rpn",
+		"name": "RPN",
+		"description": "Backward user write"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-cpu",
+		"name": "CPU",
+		"description": "Knowledge of CPU"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-reg",
+		"name": "REG",
+		"description": "Registers"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-asm",
+		"name": "ASM",
+		"description": "Knowledge of assembler"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-dis",
+		"name": "DIS",
+		"description": "Dissambler usage"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-dbg",
+		"name": "DBG",
+		"description": "Debugging"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-list",
+		"name": "LIST",
+		"description": "Lists"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-hash",
+		"name": "HASH",
+		"description": "Hashmaps"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-tree",
+		"name": "TREE",
+		"description": "Trees"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-trav",
+		"name": "TRAV",
+		"description": "Tree traversal"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-rd",
+		"name": "RD",
+		"description": "Recursive descent"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-cgen",
+		"name": "CGEN",
+		"description": "Code generation"
+	},
+	{
+		"type": "skill",
+		"id": "cpp-opt",
+		"name": "OPT",
+		"description": "Optimization"
+	},
+
+	{
+		"type": "skillset",
+		"id": "cpp-beginner",
+		"name": "CPP Beginner",
+		"description": "Beginner cpp",
+		"skills": [
+			{
+				"id": "cpp-dbg",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-opt",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-hash",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-tree",
+				"level": "beginner"
+			}
+		]
+	},
+	{
+		"type": "skillset",
+		"id": "cpp-data-structures",
+		"name": "CPP Data Structures",
+		"description": "Beginner cpp",
+		"skills": [
+			{
+				"id": "cpp-hash",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-tree",
+				"level": "beginner"
+			}
+		]
+	},
+
+	{
+		"type": "course",
+		"id": "cpp-data-use",
+		"name": "PANIKA",
+		"description": "Aaa",
+
+		"input": [
+			{
+				"id": "cpp-beginner",
+				"level": "beginner"
+			}
+		],
+		"output": [
+			{
+				"id": "cpp-cgen",
+				"level": "advanced"
+			}
+		]
+	},
+	{
+		"type": "course",
+		"id": "cpp-data-prov",
+		"name": "AAA",
+		"description": "BBB",
+
+		"input": [],
+		"output": [
+			{
+				"id": "cpp-data-structures",
+				"level": "beginner"
+			}
+		]
+	},
+	{
+		"type": "course",
+		"id": "cpp-origin_sort",
+		"name": "Origin Sort",
+		"description": "Origin Sort course",
+
+		"input":
+		[
+			{
+				"id": "cpp-func",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "beginner"
+			}
+		],
+		"output":
+		[
+			{
+				"id": "cpp-func",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-fptr",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-stru",
+				"level": "advanced"
+			},
+			{
+				"id": "cpp-dyn",
+				"level": "beginner"
+			}
+		]
+	},
+	{
+		"type": "course",
+		"id": "cpp-stack_cpu",
+		"name": "Stack CPU",
+		"description": "Cpu that uses stack to store information",
+
+		"input":
+		[
+			{
+				"id": "cpp-func",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-stru",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-dyn",
+				"level": "intermediate"
+			}
+		],
+		"output":
+		[
+			{
+				"id": "cpp-func",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-fptr",
+				"level": "advanced"
+			},
+			{
+				"id": "cpp-stru",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-stk",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-rpn",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-cpu",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-asm",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-dyn",
+				"level": "intermediate"
+			}
+		]
+	},
+	{
+		"type": "course",
+		"id": "cpp-hash_table",
+		"name": "Hash Table",
+		"description": "HashMap",
+
+		"input":
+		[
+			{
+				"id": "cpp-func",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-stru",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-dyn",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-fptr",
+				"level": "intermediate"
+			}
+		],
+		"output":
+		[
+			{
+				"id": "cpp-func",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-fptr",
+				"level": "advanced"
+			},
+			{
+				"id": "cpp-stru",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-hash",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-list",
+				"level": "intermediate"
+			}
+		]
+	},
+	{
+		"type": "course",
+		"id": "cpp-akinator",
+		"name": "Akinator",
+		"description": "Akinator based on tree traversal",
+
+		"input":
+		[
+			{
+				"id": "cpp-func",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-stru",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-dyn",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-list",
+				"level": "intermediate"
+			}
+		],
+		"output":
+		[
+			{
+				"id": "cpp-func",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-fptr",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-stru",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-hash",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-tree",
+				"level": "intermediate"
+			}
+		]
+	},
+	{
+		"type": "course",
+		"id": "cpp-lang",
+		"name": "Lang",
+		"description": "Synthetical language -> assembly",
+
+		"input":
+		[
+			{
+				"id": "cpp-func",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-stru",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-dyn",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-tree",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-stk",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-rpn",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-cpu",
+				"level": "beginner"
+			}
+		],
+		"output":
+		[
+			{
+				"id": "cpp-func",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-fptr",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-stru",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-dyn",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-tree",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-stk",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-rpn",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-cpu",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-trav",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-rd",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-cgen",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-opt",
+				"level": "advanced"
+			}
+		]
+	},
+	{
+		"id": "starting-student",
+		"type": "course",
+		"name": "Student",
+		"description": "A student who recently came",
+		"input": [],
+		"output": [
+			{
+				"id": "cpp-func",
+				"level": "none"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "none"
+			}
+		]
+	},
+	{
+		"id": "test-width",
+		"type": "course",
+		"name": "WIDTH",
+		"description": "Width test example course",
+		"input": [
+			{
+				"id": "cpp-func",
+				"level": "none"
+			},
+			{
+				"id": "cpp-fptr",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-stru",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "advanced"
+			}
+		],
+		"output": [
+			{
+				"id": "cpp-func",
+				"level": "advanced"
+			},
+			{
+				"id": "cpp-fptr",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-stru",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "none"
+			}
+		]
+	},
+	{
+		"id": "test-width1",
+		"type": "course",
+		"name": "WIDTH",
+		"description": "Width test example course",
+		"input": [
+			{
+				"id": "cpp-func",
+				"level": "none"
+			},
+			{
+				"id": "cpp-fptr",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-stru",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "advanced"
+			}
+		],
+		"output": [
+			{
+				"id": "cpp-func",
+				"level": "advanced"
+			},
+			{
+				"id": "cpp-fptr",
+				"level": "intermediate"
+			},
+			{
+				"id": "cpp-stru",
+				"level": "beginner"
+			},
+			{
+				"id": "cpp-aptr",
+				"level": "none"
+			}
+		]
+	}
+]

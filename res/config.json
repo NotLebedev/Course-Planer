@@ -1,0 +1,24 @@
+{
+	"database_path": "res/test.json",
+
+	"default_win_width": 250,
+	"default_win_height": 405,
+
+	"titleBar_size_factor": 45,
+	"window_label_padding": 4,
+	"titleBar_mainPane_gap": 0,
+
+	"import_dialog_ok_button_gap": 5,
+	"import_dialog_browse_button_gap": 2,
+
+	"CourseCard_width": 250,
+	"CourseCard_height_coefficient": 1.6180339887,
+	"CourseCard_SkillSetListPane_width_part": 6,
+
+	"text_edit_dialog_button_gap": 2,
+
+	"skill_set_pane_label_vertical_padding": 10,
+
+	"DictionarySkillSetPane_description_width_part": 3,
+	"aaa": 2
+}

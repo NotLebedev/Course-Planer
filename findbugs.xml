@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="1" timestamp="1449514872000" analysisTimestamp="1449595845650" release="">
+  <Project projectName="CoursePlanner">
+    <Jar>/Users/maximsmol/Dropbox/projects/java/CoursePlanner/bin/CoursePlanner.jar</Jar>
+    <AuxClasspathEntry>/Users/maximsmol/Dropbox/projects/java/CoursePlanner/lib/JSON-java.jar</AuxClasspathEntry>
+    <SrcDir>/Users/maximsmol/Dropbox/projects/java/CoursePlanner/src</SrcDir>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.Main">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.Main" sourcefile="Main.java" sourcepath="com/gmail/maximsmol/CoursePlanner/Main.java"/>
+    </Class>
+    <Method classname="com.gmail.maximsmol.CoursePlanner.Main" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.Main" start="26" end="81" startBytecode="0" endBytecode="208" sourcefile="Main.java" sourcepath="com/gmail/maximsmol/CoursePlanner/Main.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.Main" start="26" end="26" startBytecode="6" endBytecode="6" sourcefile="Main.java" sourcepath="com/gmail/maximsmol/CoursePlanner/Main.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.Main$2">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.Main$2" sourcefile="Main.java" sourcepath="com/gmail/maximsmol/CoursePlanner/Main.java"/>
+    </Class>
+    <Method classname="com.gmail.maximsmol.CoursePlanner.Main$2" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.Main$2" start="73" end="79" startBytecode="0" endBytecode="90" sourcefile="Main.java" sourcepath="com/gmail/maximsmol/CoursePlanner/Main.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="63" end="64" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.Main$2" start="73" end="73" startBytecode="6" endBytecode="6" sourcefile="Main.java" sourcepath="com/gmail/maximsmol/CoursePlanner/Main.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.NotAbsoluteLayout">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.NotAbsoluteLayout" sourcefile="NotAbsoluteLayout.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/NotAbsoluteLayout.java"/>
+    </Class>
+    <Method classname="com.gmail.maximsmol.CoursePlanner.gui.NotAbsoluteLayout" name="layoutContainer" signature="(Ljava/awt/Container;)V" isStatic="false">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.NotAbsoluteLayout" start="24" end="39" startBytecode="0" endBytecode="53" sourcefile="NotAbsoluteLayout.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/NotAbsoluteLayout.java"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="12" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.NotAbsoluteLayout" start="24" end="24" startBytecode="11" endBytecode="11" sourcefile="NotAbsoluteLayout.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/NotAbsoluteLayout.java"/>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.NotAbsoluteLayout" start="25" end="25" startBytecode="23" endBytecode="23" sourcefile="NotAbsoluteLayout.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/NotAbsoluteLayout.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.Window">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.Window" sourcefile="Window.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/Window.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.Window" name="win" signature="Lcom/gmail/maximsmol/CoursePlanner/gui/Window;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.Window" sourcefile="Window.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/Window.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.Window" start="9" end="9" startBytecode="7" endBytecode="7" sourcefile="Window.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/Window.java"/>
+  </BugInstance>
+  <BugInstance type="BC_UNCONFIRMED_CAST" priority="3" rank="20" abbrev="BC" category="STYLE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+    </Class>
+    <Method classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" name="labelClick" signature="(Lcom/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowConnector;Lcom/gmail/maximsmol/CoursePlanner/model/SkillSet;)V" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" start="88" end="128" startBytecode="0" endBytecode="77" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+    </Method>
+    <Type descriptor="Lcom/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowConnector;" role="TYPE_FOUND">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowConnector" start="6" end="6" sourcefile="ArrowConnector.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowConnector.java"/>
+    </Type>
+    <Type descriptor="Lcom/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowEndConnector;" role="TYPE_EXPECTED">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowEndConnector" start="9" end="50" sourcefile="ArrowEndConnector.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowEndConnector.java"/>
+    </Type>
+    <LocalVariable name="?" register="0" pc="118" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" start="117" end="117" startBytecode="119" endBytecode="119" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+  </BugInstance>
+  <BugInstance type="BC_UNCONFIRMED_CAST" priority="3" rank="20" abbrev="BC" category="STYLE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+    </Class>
+    <Method classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" name="labelClick" signature="(Lcom/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowConnector;Lcom/gmail/maximsmol/CoursePlanner/model/SkillSet;)V" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" start="88" end="128" startBytecode="0" endBytecode="77" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+    </Method>
+    <Type descriptor="Lcom/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowConnector;" role="TYPE_FOUND">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowConnector" start="6" end="6" sourcefile="ArrowConnector.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowConnector.java"/>
+    </Type>
+    <Type descriptor="Lcom/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowStartConnector;" role="TYPE_EXPECTED">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowStartConnector" start="9" end="68" sourcefile="ArrowStartConnector.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowStartConnector.java"/>
+    </Type>
+    <LocalVariable name="?" register="0" pc="19" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" start="92" end="92" startBytecode="20" endBytecode="20" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" start="113" end="113" startBytecode="109" endBytecode="109" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="BC_UNCONFIRMED_CAST" priority="3" rank="20" abbrev="BC" category="STYLE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+    </Class>
+    <Method classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" start="132" end="165" startBytecode="0" endBytecode="154" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+    </Method>
+    <Type descriptor="Ljava/awt/Graphics;" role="TYPE_FOUND">
+      <SourceLine classname="java.awt.Graphics" start="118" end="1254" sourcefile="Graphics.java" sourcepath="java/awt/Graphics.java"/>
+    </Type>
+    <Type descriptor="Ljava/awt/Graphics2D;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.awt.Graphics2D" start="421" end="506" sourcefile="Graphics2D.java" sourcepath="java/awt/Graphics2D.java"/>
+    </Type>
+    <LocalVariable name="?" register="1" pc="5" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" start="134" end="134" startBytecode="6" endBytecode="6" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" name="manager" signature="Lcom/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" start="31" end="31" startBytecode="7" endBytecode="7" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" rank="20" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager$1">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager$1" start="41" end="54" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" rank="20" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager$2">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager$2" start="53" end="73" sourcefile="ArrowManager.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowManager.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UPM_UNCALLED_PRIVATE_METHOD" priority="3" rank="20" abbrev="UPM" category="PERFORMANCE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowStartConnector">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowStartConnector" sourcefile="ArrowStartConnector.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowStartConnector.java"/>
+    </Class>
+    <Method classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowStartConnector" name="unconnect" signature="()V" isStatic="false">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowStartConnector" start="47" end="51" startBytecode="0" endBytecode="80" sourcefile="ArrowStartConnector.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowStartConnector.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" name="DEFAULT_LABEL_BACKGROUND" signature="Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" start="12" end="12" startBytecode="63" endBytecode="63" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" name="DEFAULT_LABEL_FOREGROUND" signature="Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" start="13" end="13" startBytecode="76" endBytecode="76" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" name="NORMAL_SKILL" signature="Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" start="8" end="8" startBytecode="10" endBytecode="10" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" name="SELECTED_LABEL_BACKGROUND" signature="Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" start="18" end="18" startBytecode="129" endBytecode="129" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" name="SELECTED_LABEL_FOREGROUND" signature="Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" start="19" end="19" startBytecode="142" endBytecode="142" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" name="TRASNFERED_SKILL" signature="Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" start="10" end="10" startBytecode="44" endBytecode="44" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" name="UNCONNECTED_INPUT_LABEL_BACKGROUND" signature="Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" start="15" end="15" startBytecode="91" endBytecode="91" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" name="UNCONNECTED_INPUT_LABEL_FOREGROUND" signature="Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" start="16" end="16" startBytecode="110" endBytecode="110" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="3" rank="20" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" name="OPTIONAL_SKILL" signature="Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" start="9" end="9" startBytecode="27" endBytecode="27" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UrF" category="STYLE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" name="OPTIONAL_SKILL" signature="Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" start="9" end="9" startBytecode="27" endBytecode="27" sourcefile="ArrowUIDecorator.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/arrows/ArrowUIDecorator.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UrF" category="STYLE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants" sourcefile="ArrowColorConstants.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/ArrowColorConstants.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants" name="NORMAL_SKILL" signature="Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants" sourcefile="ArrowColorConstants.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/ArrowColorConstants.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants" start="6" end="6" startBytecode="10" endBytecode="10" sourcefile="ArrowColorConstants.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/ArrowColorConstants.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UrF" category="STYLE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants" sourcefile="ArrowColorConstants.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/ArrowColorConstants.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants" name="OPTIONAL_SKILL" signature="Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants" sourcefile="ArrowColorConstants.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/ArrowColorConstants.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants" start="7" end="7" startBytecode="27" endBytecode="27" sourcefile="ArrowColorConstants.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/ArrowColorConstants.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UrF" category="STYLE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants" sourcefile="ArrowColorConstants.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/ArrowColorConstants.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants" name="TRASNFERED_SKILL" signature="Ljava/awt/Color;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants" sourcefile="ArrowColorConstants.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/ArrowColorConstants.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants" start="8" end="8" startBytecode="44" endBytecode="44" sourcefile="ArrowColorConstants.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/ArrowColorConstants.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.cards.BasicSkillSetPane">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.BasicSkillSetPane" sourcefile="BasicSkillSetPane.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/BasicSkillSetPane.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.cards.BasicSkillSetPane" name="skillSet" signature="Lcom/gmail/maximsmol/CoursePlanner/model/SkillSet;" isStatic="false">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.BasicSkillSetPane" sourcefile="BasicSkillSetPane.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/BasicSkillSetPane.java"/>
+    </Field>
+    <Type descriptor="Lcom/gmail/maximsmol/CoursePlanner/model/SkillSet;" role="TYPE_FOUND">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.SkillSet" start="8" end="44" sourcefile="SkillSet.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/SkillSet.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.cards.CourseCard">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.CourseCard" sourcefile="CourseCard.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/CourseCard.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.cards.CourseCard" name="course" signature="Lcom/gmail/maximsmol/CoursePlanner/model/Course;" isStatic="false">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.CourseCard" sourcefile="CourseCard.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/CourseCard.java"/>
+    </Field>
+    <Type descriptor="Lcom/gmail/maximsmol/CoursePlanner/model/Course;" role="TYPE_FOUND">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Course" start="10" end="45" sourcefile="Course.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Course.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SA_FIELD_SELF_ASSIGNMENT" priority="2" rank="3" abbrev="SA" category="CORRECTNESS">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillDictionary">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillDictionary" sourcefile="SkillDictionary.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/SkillDictionary.java"/>
+    </Class>
+    <Method classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillDictionary" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillDictionary" start="37" end="57" startBytecode="0" endBytecode="184" sourcefile="SkillDictionary.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/SkillDictionary.java"/>
+    </Method>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillDictionary" name="course" signature="Lcom/gmail/maximsmol/CoursePlanner/model/Course;" isStatic="false">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillDictionary" sourcefile="SkillDictionary.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/SkillDictionary.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillDictionary" start="43" end="43" startBytecode="61" endBytecode="61" sourcefile="SkillDictionary.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/SkillDictionary.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillDictionary">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillDictionary" sourcefile="SkillDictionary.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/SkillDictionary.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillDictionary" name="course" signature="Lcom/gmail/maximsmol/CoursePlanner/model/Course;" isStatic="false">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillDictionary" sourcefile="SkillDictionary.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/SkillDictionary.java"/>
+    </Field>
+    <Type descriptor="Lcom/gmail/maximsmol/CoursePlanner/model/Course;" role="TYPE_FOUND">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Course" start="10" end="45" sourcefile="Course.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Course.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillSetListPane">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillSetListPane" sourcefile="SkillSetListPane.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/SkillSetListPane.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillSetListPane" name="skills" signature="Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillSetListPane" sourcefile="SkillSetListPane.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/SkillSetListPane.java"/>
+    </Field>
+    <Type descriptor="Lcom/gmail/maximsmol/CoursePlanner/model/SkillSet;" role="TYPE_FOUND">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.SkillSet" start="8" end="44" sourcefile="SkillSet.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/SkillSet.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="RI_REDUNDANT_INTERFACES" priority="3" rank="20" abbrev="RI" category="STYLE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillSetPane">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillSetPane" start="29" end="106" sourcefile="SkillSetPane.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/SkillSetPane.java"/>
+    </Class>
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.relativeComponents.RelativeContainer" role="INTERFACE_TYPE">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.relativeComponents.RelativeContainer" sourcefile="RelativeContainer.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/relativeComponents/RelativeContainer.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillSetPane">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillSetPane" sourcefile="SkillSetPane.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/SkillSetPane.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillSetPane" name="course" signature="Lcom/gmail/maximsmol/CoursePlanner/model/Course;" isStatic="false">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillSetPane" sourcefile="SkillSetPane.java" sourcepath="com/gmail/maximsmol/CoursePlanner/gui/cards/SkillSetPane.java"/>
+    </Field>
+    <Type descriptor="Lcom/gmail/maximsmol/CoursePlanner/model/Course;" role="TYPE_FOUND">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Course" start="10" end="45" sourcefile="Course.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Course.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="DM_CONVERT_CASE" priority="3" rank="20" abbrev="Dm" category="I18N">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.model.Database">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+    </Class>
+    <Method classname="com.gmail.maximsmol.CoursePlanner.model.Database" name="levelFromString" signature="(Ljava/lang/String;)Lcom/gmail/maximsmol/CoursePlanner/model/SkillLevel;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database" start="56" end="56" startBytecode="0" endBytecode="31" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+    </Method>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database" start="56" end="56" startBytecode="1" endBytecode="1" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.model.Database">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.model.Database" name="courses" signature="Ljava/util/HashMap;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database" start="20" end="20" startBytecode="27" endBytecode="27" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.model.Database">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.model.Database" name="skillGroups" signature="Ljava/util/HashMap;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database" start="19" end="19" startBytecode="17" endBytecode="17" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.model.Database">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+    </Class>
+    <Field classname="com.gmail.maximsmol.CoursePlanner.model.Database" name="skills" signature="Ljava/util/HashMap;" isStatic="true">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+    </Field>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database" start="18" end="18" startBytecode="7" endBytecode="7" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.model.Database$ReadResult">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database$ReadResult" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+    </Class>
+    <Method classname="com.gmail.maximsmol.CoursePlanner.model.Database$ReadResult" name="print" signature="()V" isStatic="false">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database$ReadResult" start="39" end="46" startBytecode="0" endBytecode="132" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+    </Method>
+    <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.Database$ReadResult" start="45" end="45" startBytecode="67" endBytecode="67" sourcefile="Database.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/Database.java"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="com.gmail.maximsmol.CoursePlanner.model.SkillSet">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.SkillSet" sourcefile="SkillSet.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/SkillSet.java"/>
+    </Class>
+    <Method classname="com.gmail.maximsmol.CoursePlanner.model.SkillSet" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="com.gmail.maximsmol.CoursePlanner.model.SkillSet" start="41" end="44" startBytecode="0" endBytecode="110" sourcefile="SkillSet.java" sourcepath="com/gmail/maximsmol/CoursePlanner/model/SkillSet.java"/>
+    </Method>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 7 Dec 2015 23:01:12 +0400" total_classes="44" referenced_classes="483" total_bugs="37" total_size="1299" num_packages="7" java_version="1.8.0_25" vm_version="25.25-b02" cpu_seconds="29.78" clock_seconds="3334.21" peak_mbytes="387.19" alloc_mbytes="683.00" gc_seconds="0.33" priority_3="18" priority_2="3" priority_1="16">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="6">
+      <ClassStats class="Main" sourceFile="Main.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.gmail.maximsmol.CoursePlanner" total_bugs="2" total_types="3" total_size="52" priority_1="2">
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.Main" sourceFile="Main.java" interface="false" size="18" bugs="1" priority_1="1"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.Main$1" sourceFile="Main.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.Main$2" sourceFile="Main.java" interface="false" size="10" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="com.gmail.maximsmol.CoursePlanner.gui" total_bugs="2" total_types="12" total_size="246" priority_2="1" priority_1="1">
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.DraggablePanel" sourceFile="DraggablePanel.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.NotAbsoluteLayout" sourceFile="NotAbsoluteLayout.java" interface="false" size="28" bugs="1" priority_2="1"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.RelativeContainer" sourceFile="RelativeContainer.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.RelativelyBounded" sourceFile="RelativelyBounded.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.RelativelyLayouted" sourceFile="RelativelyLayouted.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.RelativelyLocated" sourceFile="RelativelyLocated.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.RelativelyResizable" sourceFile="RelativelyResizable.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.ResizableLabel" sourceFile="ResizableLabel.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.ResizableScrollPane" sourceFile="ResizableScrollPane.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.ResizableTextArea" sourceFile="ResizableTextArea.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.StackLayout" sourceFile="StackLayout.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.Window" sourceFile="Window.java" interface="false" size="15" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="com.gmail.maximsmol.CoursePlanner.gui.arrows" total_bugs="17" total_types="8" total_size="234" priority_3="8" priority_1="9">
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowConnectionListener" sourceFile="ArrowConnectionListener.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowConnector" sourceFile="ArrowConnector.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowEndConnector" sourceFile="ArrowEndConnector.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager" sourceFile="ArrowManager.java" interface="false" size="76" bugs="4" priority_3="3" priority_1="1"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager$1" sourceFile="ArrowManager.java" interface="false" size="15" bugs="1" priority_3="1"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowManager$2" sourceFile="ArrowManager.java" interface="false" size="17" bugs="1" priority_3="1"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowStartConnector" sourceFile="ArrowStartConnector.java" interface="false" size="42" bugs="1" priority_3="1"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.arrows.ArrowUIDecorator" sourceFile="ArrowUIDecorator.java" interface="false" size="45" bugs="10" priority_3="2" priority_1="8"/>
+    </PackageStats>
+    <PackageStats package="com.gmail.maximsmol.CoursePlanner.gui.cards" total_bugs="10" total_types="7" total_size="438" priority_3="9" priority_2="1">
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.cards.ArrowColorConstants" sourceFile="ArrowColorConstants.java" interface="false" size="10" bugs="3" priority_3="3"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.cards.BasicSkillSetPane" sourceFile="BasicSkillSetPane.java" interface="false" size="63" bugs="1" priority_3="1"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.cards.CourseCard" sourceFile="CourseCard.java" interface="false" size="118" bugs="1" priority_3="1"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.cards.CourseInfoCardPart" sourceFile="CourseInfoCardPart.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillDictionary" sourceFile="SkillDictionary.java" interface="false" size="57" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillSetListPane" sourceFile="SkillSetListPane.java" interface="false" size="74" bugs="1" priority_3="1"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.cards.SkillSetPane" sourceFile="SkillSetPane.java" interface="false" size="58" bugs="2" priority_3="2"/>
+    </PackageStats>
+    <PackageStats package="com.gmail.maximsmol.CoursePlanner.gui.relativeComponents" total_bugs="0" total_types="5" total_size="14">
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.relativeComponents.RelativeContainer" sourceFile="RelativeContainer.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.relativeComponents.RelativelyBounded" sourceFile="RelativelyBounded.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.relativeComponents.RelativelyLayouted" sourceFile="RelativelyLayouted.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.relativeComponents.RelativelyLocated" sourceFile="RelativelyLocated.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.gui.relativeComponents.RelativelyResizable" sourceFile="RelativelyResizable.java" interface="true" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.gmail.maximsmol.CoursePlanner.model" total_bugs="6" total_types="8" total_size="309" priority_3="1" priority_2="1" priority_1="4">
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.model.Course" sourceFile="Course.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.model.Database" sourceFile="Database.java" interface="false" size="159" bugs="4" priority_3="1" priority_1="3"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.model.Database$ReadResult" sourceFile="Database.java" interface="false" size="21" bugs="1" priority_2="1"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.model.LeveledSkill" sourceFile="LeveledSkill.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.model.ModelReader" sourceFile="ModelReader.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.model.Skill" sourceFile="Skill.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.model.SkillLevel" sourceFile="SkillLevel.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.gmail.maximsmol.CoursePlanner.model.SkillSet" sourceFile="SkillSet.java" interface="false" size="27" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="756" invocations="1871" avgMicrosecondsPerInvocation="404" maxMicrosecondsPerInvocation="42771" standardDeviationMircosecondsPerInvocation="1339"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="334" invocations="483" avgMicrosecondsPerInvocation="693" maxMicrosecondsPerInvocation="284880" standardDeviationMircosecondsPerInvocation="12945"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="329" invocations="483" avgMicrosecondsPerInvocation="682" maxMicrosecondsPerInvocation="16896" standardDeviationMircosecondsPerInvocation="1474"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="300" invocations="2" avgMicrosecondsPerInvocation="150160" maxMicrosecondsPerInvocation="207841" standardDeviationMircosecondsPerInvocation="57681"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="286" invocations="483" avgMicrosecondsPerInvocation="593" maxMicrosecondsPerInvocation="9108" standardDeviationMircosecondsPerInvocation="1003"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="175" invocations="1122" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="1481" standardDeviationMircosecondsPerInvocation="173"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="158" invocations="1876" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="28513" standardDeviationMircosecondsPerInvocation="849"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="94" invocations="229" avgMicrosecondsPerInvocation="412" maxMicrosecondsPerInvocation="6154" standardDeviationMircosecondsPerInvocation="789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="86" invocations="483" avgMicrosecondsPerInvocation="179" maxMicrosecondsPerInvocation="6956" standardDeviationMircosecondsPerInvocation="410"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="79" invocations="229" avgMicrosecondsPerInvocation="348" maxMicrosecondsPerInvocation="6393" standardDeviationMircosecondsPerInvocation="705"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="76" invocations="20" avgMicrosecondsPerInvocation="3847" maxMicrosecondsPerInvocation="39625" standardDeviationMircosecondsPerInvocation="9871"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="72" invocations="229" avgMicrosecondsPerInvocation="318" maxMicrosecondsPerInvocation="6252" standardDeviationMircosecondsPerInvocation="704"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="72" invocations="235" avgMicrosecondsPerInvocation="307" maxMicrosecondsPerInvocation="5106" standardDeviationMircosecondsPerInvocation="589"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="72" invocations="564" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="2410" standardDeviationMircosecondsPerInvocation="221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="62" invocations="1816" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="911" standardDeviationMircosecondsPerInvocation="60"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="60" invocations="229" avgMicrosecondsPerInvocation="263" maxMicrosecondsPerInvocation="4681" standardDeviationMircosecondsPerInvocation="501"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1449514872000" release="" codeSize="1299" numClasses="44"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,13 @@
+{
+	"type": "skillset",
+	"id": "cpp-func-beginner",
+	"name": "aaa",
+	"description": "fffff",
+
+	"skills": [
+		{
+			"id": "cpp-fptr",
+			"level": "beginner"
+		}
+	]
+}
